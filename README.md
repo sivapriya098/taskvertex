@@ -2,7 +2,7 @@
 
 A full-stack personal task management app built with **React**, **Spring Boot**, and **MySQL** — featuring JWT authentication, priority-based task tracking, and a real-time dashboard.
 
-> 🔗 [Live Demo](#) &nbsp;|&nbsp; 📁 [Frontend](./frontend) &nbsp;|&nbsp; 📁 [Backend](./backend)
+> 📁 [Frontend](./frontend) &nbsp;|&nbsp; 📁 [Backend](./backend)
 
 ---
 
