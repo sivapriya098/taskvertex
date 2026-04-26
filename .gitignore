@@ -1,0 +1,18 @@
+# Frontend
+frontend/node_modules/
+frontend/.env
+frontend/build/
+
+# Backend
+backend/target/
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/backend/.classpath
+backend/backend/.project
+backend/backend/.settings/
+backend/backend/target/
+
+# IDE
+.idea/
+*.iml
