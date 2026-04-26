@@ -1,0 +1,218 @@
+/* ─── Page heading ───────────────────────────────────────────── */
+.dash-heading {
+  margin-bottom: 28px;
+}
+.dash-heading h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.dash-heading p {
+  font-size: 14px;
+  color: var(--muted2);
+}
+
+/* ─── Stat Cards ─────────────────────────────────────────────── */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.stat-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color 0.2s;
+}
+.stat-card:hover {
+  border-color: var(--lime);
+}
+.stat-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+.stat-value {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+}
+.stat-label {
+  font-size: 13px;
+  color: var(--muted2);
+  font-weight: 500;
+}
+.stat-card--overdue .stat-icon {
+  font-size: 20px;
+}
+
+/* ─── Recent Tasks section ───────────────────────────────────── */
+.recent-section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.recent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.recent-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.view-all-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--lime);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.view-all-link:hover { opacity: 0.75; }
+
+/* ─── Task table ─────────────────────────────────────────────── */
+.task-table-wrap {
+  overflow-x: auto;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.task-table thead tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.task-table th {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted2);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 0 16px 12px 0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.task-table tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+}
+.task-table tbody tr:last-child {
+  border-bottom: none;
+}
+.task-table tbody tr:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+.task-table td {
+  padding: 14px 16px 14px 0;
+  vertical-align: middle;
+}
+
+.task-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+.task-sub {
+  font-size: 12px;
+  color: var(--muted2);
+  margin-top: 2px;
+}
+
+.due-normal { font-size: 13px; color: var(--muted2); }
+.due-overdue { font-size: 13px; color: #f87171; font-weight: 600; }
+
+/* ─── Table badges ───────────────────────────────────────────── */
+.tbl-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Status badges */
+.tbl-status--todo        { background: rgba(148,163,184,0.15); color: #94a3b8; }
+.tbl-status--in-progress { background: rgba(251,191,36,0.15);  color: #fbbf24; }
+.tbl-status--done        { background: rgba(74,222,128,0.15);  color: #4ade80; }
+
+/* Priority badges */
+.tbl-priority--high   { background: rgba(248,113,113,0.15); color: #f87171; }
+.tbl-priority--medium { background: rgba(251,191,36,0.15);  color: #fbbf24; }
+.tbl-priority--low    { background: rgba(74,222,128,0.15);  color: #4ade80; }
+
+/* ─── Table action buttons ───────────────────────────────────── */
+.tbl-actions {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.tbl-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--muted2);
+  font-size: 13px;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+.tbl-btn:hover {
+  border-color: var(--lime);
+  color: var(--lime);
+}
+.tbl-btn--delete:hover {
+  border-color: #f87171;
+  color: #f87171;
+}
+
+/* ─── Empty state ────────────────────────────────────────────── */
+.empty-state {
+  text-align: center;
+  padding: 48px 20px;
+}
+.empty-icon { font-size: 36px; margin-bottom: 12px; }
+.empty-title { font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+.empty-desc { font-size: 13px; color: var(--muted2); margin-bottom: 20px; }
+
+/* ─── Navbar: avatar circle ──────────────────────────────────── */
+.nav-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--lime);
+  color: #050709;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .stats-grid { grid-template-columns: 1fr; }
+  .dash-heading h1 { font-size: 22px; }
+}
