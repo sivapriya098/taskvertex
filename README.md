@@ -80,6 +80,22 @@ All `/api/tasks` endpoints require `Authorization: Bearer <token>`
 
 ---
 
+## 📸 Screenshots
+
+| Landing Page | Register | Login |
+|---|---|
+| ![Landing](screenshots/landing.png) | ![Register](screenshots/register.png) | ![Login](screenshots/login.png) |
+
+| Dashboard | Task List |
+|---|---|
+| ![Dashboard](screenshots/dashboard.png) | ![Tasks](screenshots/tasks.png) |
+
+| Add Task |
+|---|
+| ![Add Task](screenshots/addtask.png) |
+
+---
+
 ## 👤 Author
 
 **Murathotti Sivapriya** — [GitHub](https://github.com/sivapriya098) · [LinkedIn](https://www.linkedin.com/in/murathotti-sivapriya-192a56285)
