@@ -2,7 +2,8 @@
 
 A full-stack personal task management app built with **React**, **Spring Boot**, and **MySQL** — featuring JWT authentication, priority-based task tracking, and a real-time dashboard.
 
-> 📁 [Frontend](./frontend) &nbsp;|&nbsp; 📁 [Backend](./backend)
+> 🔗 [Live Demo](https://taskvertex-frontend.vercel.app) &nbsp;| &nbsp; 📁 [Frontend](./frontend) &nbsp;|&nbsp; 📁 [Backend](./backend)
+> ⚠️ **Note:** Backend is hosted on Render's free tier — it may take **30-50 seconds** to respond on first load due to cold start. Please wait a moment before logging in.
 
 ---
 
